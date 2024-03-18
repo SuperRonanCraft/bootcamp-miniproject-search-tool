@@ -15,23 +15,39 @@
   <body>
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center">
-        <form class="col-12 col-sm-9 col-md-9 col-lg-6 text-center m-2">
+        <form
+          id="form"
+          class="col-12 col-sm-9 col-md-9 col-lg-6 text-center m-2"
+        >
           <h1>Library of Congress Search Engine</h1>
           <input
             class="col-12 px-2"
-            id="search-input"
+            id="input-search"
             type="text"
             placeholder="Search"
+            required
           />
-          <select class="col-12 my-2" id="search-filter" default="asd">
+          <select class="col-12 my-2" id="input-filter" default="asd">
             <option value="" selected disabled>Select a format...</option>
+            <option value="audio">Audio</option>
+            <option value="books">Books/Printed Material</option>
+            <option value="film-and-video">Film/Video</option>
+            <option value="legislation">Legislation</option>
+            <option value="manuscripts">Manuscripts/Mixed Material</option>
+            <option value="maps">Maps</option>
+            <option value="newspapers">Newspapers</option>
+            <option value="photos">Photo, Print, Drawing</option>
+            <option value="notated-music">Printed Music</option>
+            <option value="web-archives">Web Archives</option>
           </select>
-          <input
-            type="button"
+          <button
+            type="submit"
             value="Search"
             id="button-search"
             class="btn btn-primary mb-2 w-100 p-0"
-          />
+          >
+            Search!
+          </button>
         </form>
       </div>
     </div>
