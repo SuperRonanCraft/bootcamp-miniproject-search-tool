@@ -29,6 +29,7 @@ function getResults(input, filter) {
 function displayResult(result) {
   console.log(result);
   const resultEl = document.createElement("div");
+  result.classList.add("results");
 
   const titleEl = document.createElement("h3");
   titleEl.textContent = `${result.title}`;
