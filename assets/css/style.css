@@ -10,3 +10,16 @@ body div {
 form {
   background-color: rgb(211, 254, 255);
 }
+
+#search {
+  background-color: rgb(211, 254, 255);
+}
+
+#results {
+  color: rgb(155, 211, 233);
+}
+
+.result {
+  color: rgb(23, 56, 90);
+  background-color: rgb(211, 254, 255);
+}
