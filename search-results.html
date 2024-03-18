@@ -2,22 +2,55 @@
 <html>
   <head>
     <title>Search Results</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <main>
-    <h1>Library of Congress</h1>
-    <div class="col-12 col-sm-3">
-      <!-- Search Bar -->
+  <body class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <form id="form" class="m-2 p-2">
+          <h1>Library of Congress Search Engine</h1>
+          <input
+            class="col-12 px-2"
+            id="input-search"
+            type="text"
+            placeholder="Search"
+            required
+          />
+          <select class="col-12 my-2" id="input-filter" default="asd">
+            <option value="" selected disabled>Select a format...</option>
+            <option value="audio">Audio</option>
+            <option value="books">Books/Printed Material</option>
+            <option value="film-and-video">Film/Video</option>
+            <option value="legislation">Legislation</option>
+            <option value="manuscripts">Manuscripts/Mixed Material</option>
+            <option value="maps">Maps</option>
+            <option value="newspapers">Newspapers</option>
+            <option value="photos">Photo, Print, Drawing</option>
+            <option value="notated-music">Printed Music</option>
+            <option value="web-archives">Web Archives</option>
+          </select>
+          <button
+            type="submit"
+            value="Search"
+            id="button-search"
+            class="btn btn-primary mb-2 w-100 p-0"
+          >
+            Search!
+          </button>
+        </form>
+      </div>
     </div>
-    <div class="col-12 col-sm-9">
-      <!-- Search Results -->
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-9 col-lg-9">
+        <!-- Search Results -->
+      </div>
     </div>
-  </main>
+  </body>
   <script src="assets/js/searchresults.js"></script>
 </html>
