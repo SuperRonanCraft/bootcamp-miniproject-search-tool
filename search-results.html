@@ -12,8 +12,8 @@
   </head>
   <body class="container-fluid">
     <div class="row">
-      <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-        <form id="form" class="m-2 p-2">
+      <div id="search" class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <form id="form" class="m-0 p-0">
           <h1>Library of Congress Search Engine</h1>
           <input
             class="col-12 px-2"
@@ -43,12 +43,17 @@
           >
             Search!
           </button>
+          <button
+            value="Back"
+            id="button-back"
+            class="btn btn-danger mb-2 w-100 p-0"
+          >
+            Back
+          </button>
         </form>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-9 col-lg-9">
-        <!-- Search Results -->
+      <div id="results" class="col-12 col-sm-6 col-md-9 col-lg-9">
+        <h2 id="search-title">Showing results for</h2>
       </div>
     </div>
   </body>
